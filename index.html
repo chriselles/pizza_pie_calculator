@@ -4,13 +4,18 @@
     <meta charset=utf-8>
     <meta name=viewport content="width=device-width,initial-scale=1">
 
-    <title>🍕 Pizza Pie Calculator 🍕</title>
+     <div style="display: flex; justify-content:left; flex-wrap:wrap; align-items: center; margin-top: 20px">
+      <div class="chain_cell"><img src="static/img/RIDES.co-2.png" id="Ridesco" class="logo_header"/></div>
+      <div class="chain_cell"></div> 
+    </div>
+    
+    <title>RIDES.co</title> <!--Pizza Pie Calculator-->
 
-    <meta property="og:locale" content="en_US" />
-    <meta property="og:title" content="Pizza Pie Calculator. How much are you paying per bite?" />
-    <meta property="og:description" content="Choose a size, and a crust width to find the best value for your money." />
-    <meta property="og:url" content="https://pizzapiecalculator.com/" />
-    <meta property="og:site_name" content="PIzza Pie Calculator" />
+    <meta property="og:locale" content="en_NZ" />  <!--"en_US"-->
+    <meta property="og:title" content="Do you want to find local Rides?" />  <!-- "Pizza Pie Calculator. How much are you paying per bite?" -->
+    <meta property="og:description" content="Select Ride length, distance from home and how many Riders." /> <!-- "Choose a size, and a crust width to find the best value for your money." -->
+    <meta property="og:url" content="https://rides.co/" />  <!-- "https://pizzapiecalculator.com/" -->
+    <meta property="og:site_name" content="Ride Finder" />  <!-- "Pizza Pie Calculator" -->
     <meta property="og:image" content="https://pizzapiecalculator.com/static/img/pizza_calc.png" />
 
     <!-- UIkit CSS -->
@@ -25,7 +30,7 @@
     margin:20px;
   }
 
- .pizza_img {
+ .pizza_img { 
     position:absolute;
     top:40px;
     left:40px;
@@ -154,7 +159,10 @@
 </style>
 </head>
     <body>
-      <h1 style="text-align:center;">Pizza Pie Calculator</h1>
+      <h1 style="text-align:center;">
+        <div class="chain_cell"><img src="static/img/RIDES.co-2.png" id="Ridesco" class="logo_header"/></div>
+        <div class="chain_cell"></div> 
+      </div></h1> <!-- Pizza Pie Calculator -->
         <div class="page-1">
             <div id="pizza-container">
                 <img src="static/img/ruler.png" id="ruler"/>
@@ -220,78 +228,78 @@
             </div>
           <div style="display: flex; justify-content:left; flex-wrap:wrap; align-items: center;">
             <div class="chain_cell"><img src="static/img/dominos_logo_2.png" id="dominos" class="logo_header"/></div>
-            <div class="chain_cell"><button class="uk-button uk-button-default" type="button" onclick="prefill(10, 0.9, 12.1)">SMALL</button></div>
-            <div class="chain_cell"><button class="uk-button uk-button-default" type="button" onclick="prefill(12, 0.9, 14.5)">MEDIUM</button></div>
-            <div class="chain_cell"><button class="uk-button uk-button-default" type="button" onclick="prefill(14, 0.9, 16.8)">LARGE</button></div>
-            <div class="chain_cell"><button class="uk-button uk-button-default" type="button" onclick="prefill(16, 0.9, 19.3)">X-LARGE</button></div>
+            <div class="chain_cell"><button class="uk-button uk-button-default" type="button" onclick="prefill(10, 0.9, 12.1)">SMALL</button></div> <!-- SMALL Ride: 50km(25km-75km), Distance from Start: <25km, Riders: >3(ALL?) -->
+            <div class="chain_cell"><button class="uk-button uk-button-default" type="button" onclick="prefill(12, 0.9, 14.5)">MEDIUM</button></div> <!-- MEDIUM Ride: 100km(75km-150km), Distance from Start: <50km, Riders: >3(ALL?) -->
+            <div class="chain_cell"><button class="uk-button uk-button-default" type="button" onclick="prefill(14, 0.9, 16.8)">LARGE</button></div> <!-- LARGE Ride: 200km(125-250km), Distance from Start: <75km, Riders: >3(ALL?) -->
+            <div class="chain_cell"><button class="uk-button uk-button-default" type="button" onclick="prefill(16, 0.9, 19.3)">X-LARGE</button></div> <!-- X-LARGE Ride: 250km+(225km-1000km+), Distance from Start: <150km, Riders: >3(ALL?) -->
           </div>
 
           <div style="display: flex; justify-content:left; flex-wrap:wrap; align-items: center; margin-top: 20px">
             <div class="chain_cell"><img src="static/img/papa_johns_logo.png" id="papa_johns" class="logo_header"/></div>
-            <div class="chain_cell"><button class="uk-button uk-button-default" type="button" onclick="prefill(10, 0.9, 12.0)">SMALL</button></div>
-            <div class="chain_cell"><button class="uk-button uk-button-default" type="button" onclick="prefill(12, 0.9, 14.5)">MEDIUM</button></div>
-            <div class="chain_cell"><button class="uk-button uk-button-default" type="button" onclick="prefill(14, 0.9, 17.0)">LARGE</button></div>
-            <div class="chain_cell"><button class="uk-button uk-button-default" type="button" onclick="prefill(16, 0.9, 19.5)">X-LARGE</button></div>
+            <div class="chain_cell"><button class="uk-button uk-button-default" type="button" onclick="prefill(10, 0.9, 12.0)">SMALL</button></div> <!-- SMALL Ride: 50km(25km-75km), Distance from Start: <25km, Riders: >3(ALL?) -->
+            <div class="chain_cell"><button class="uk-button uk-button-default" type="button" onclick="prefill(12, 0.9, 14.5)">MEDIUM</button></div> <!-- MEDIUM Ride: 100km(75km-150km), Distance from Start: <50km, Riders: >3(ALL?) -->
+            <div class="chain_cell"><button class="uk-button uk-button-default" type="button" onclick="prefill(14, 0.9, 17.0)">LARGE</button></div> <!-- LARGE Ride: 200km(125-250km), Distance from Start: <75km, Riders: >3(ALL?) -->
+            <div class="chain_cell"><button class="uk-button uk-button-default" type="button" onclick="prefill(16, 0.9, 19.5)">X-LARGE</button></div> <!-- X-LARGE Ride: 250km+(225km-1000km+), Distance from Start: <150km, Riders: >3(ALL?) -->
           </div>
 
 
           <div style="display: flex; justify-content:left; flex-wrap:wrap; align-items: center; margin-top: 20px">
             <div class="chain_cell"><img src="static/img/pizza_hut_logo.png" id="papa_johns" class="logo_header"/></div>
-            <div class="chain_cell"><button class="uk-button uk-button-default" type="button" onclick="prefill(12, 0.9, 14.0)">MEDIUM</button></div>
-            <div class="chain_cell"><button class="uk-button uk-button-default" type="button" onclick="prefill(14, 0.9, 16.5)">LARGE</button></div>
+            <div class="chain_cell"><button class="uk-button uk-button-default" type="button" onclick="prefill(12, 0.9, 14.0)">MEDIUM</button></div> <!-- MEDIUM Ride: 100km(75km-150km), Distance from Start: <50km, Riders: >3(ALL?) -->
+            <div class="chain_cell"><button class="uk-button uk-button-default" type="button" onclick="prefill(14, 0.9, 16.5)">LARGE</button></div> <!-- LARGE Ride: 200km(125-250km), Distance from Start: <75km, Riders: >3(ALL?) -->
           </div>
 
           <div style="display: flex; justify-content:left; flex-wrap:wrap; align-items: center; margin-top: 20px">
             <div class="chain_cell"><img src="static/img/little_ceasars_logo.png" id="little_ceasars" class="logo_header"/></div>
-            <div class="chain_cell"><button class="uk-button uk-button-default" type="button" onclick="prefill(14, 0.9, 8.9)">LARGE (2-topping)</button></div>
+            <div class="chain_cell"><button class="uk-button uk-button-default" type="button" onclick="prefill(14, 0.9, 8.9)">LARGE (2-topping)</button></div> <!-- LARGE Ride: 200km(125-250km), Distance from Start: <75km, Riders: >3(ALL?) -->
           </div>
 
         </div>
       <div style="display:flex; justify-content: center;">
       <div class="footer">
-        <p>I thought it would be so cool to have a link to buy me a pizza, and link out to Papa Johns and be able to literally buy a pizza that gets delivered to me, but I don't see an easy way to do it without exposing my house address, which I'd rather not post so plainly. So, rather than buy me a pizza, why don't you donate $10 to the Arbor Foundation through <a href="https://teamtrees.org/">#TeamTrees</a>.</p>
+        <p>We thought it would be awesome to build a Ride Finder to help Riders connect and meet in person to do what we love....Ride! <a href="https://rides.co/">#RIDESco</a>.</p>  <!-- I thought it would be so cool to have a link to buy me a pizza, and link out to Papa Johns and be able to literally buy a pizza that gets delivered to me, but I don't see an easy way to do it without exposing my house address, which I'd rather not post so plainly. So, rather than buy me a pizza, why don't you donate $10 to the Arbor Foundation through <a href="https://teamtrees.org/">#TeamTrees</a>. -->
 
-        <h5 style="text-align: center">Fork this on <a href="https://github.com/crobertsbmw/pizza_pie_calculator">GitHub</a>.</h5>
+        <h5 style="text-align: center">Fork this on <a href="https://github.com/chriselles/pizza_pie_calculator">GitHub</a>.</h5>  <!-- "https://github.com/crobertsbmw/pizza_pie_calculator" -->
       </div>
     </div>
     </body>
 </html>
 
 <script>
-
-var pizza_crust = 1; //default values.
-var pizza_size = 14;
-var pizza_cost = 12;
+// default values
+var pizza_crust = 1; //pizza crust = Distance from Start
+var pizza_size = 14; //pizza size = Ride Length
+var pizza_cost = 12; //pizza cost = How many Riders
 
 var size_slider = document.getElementById("size_slider");
-var size_text = document.getElementById("size");
+var size_text = document.getElementById("size"); // size(pizza size) = Ride Length
 size_text.value = size_slider.value;
 
-var crust_width = document.getElementById("crust_width");
 var crust_slider = document.getElementById("crust_slider");
+var crust_width = document.getElementById("crust_width"); // width(pizza crust) = Distance from Start
 crust_width.value = crust_slider.value / 10;
 
-var dollar_text = document.getElementById("dollars");
 var dollar_slider = document.getElementById("dollars_slider");
+var dollar_text = document.getElementById("dollars"); // dollars(pizza cost) = How many Riders
 dollar_text.value = dollar_slider.value;
 
-function prefill(size, crust, dollars) {
-  pizza_size = size;
-  pizza_crust = crust;
-  pizza_cost = dollars;
-  size_slider.value = size;
-  crust_slider.value = crust;
-  dollar_slider.value = dollars;
-  size_text.value = size;
-  crust_width.value = crust;
-  dollar_text.value = dollars;
+function prefill(size, crust, dollars) {  //size, crust, dollars = Ride Length, Distance from Start, How many Riders
+  pizza_size = size; // size = Ride Length
+  pizza_crust = crust; // crust = Distance from Start
+  pizza_cost = dollars; // dollars = How many Riders
+  size_slider.value = size; // size = Ride Length
+  crust_slider.value = crust; // crust = Distance from Start
+  dollar_slider.value = dollars; // dollars = How many Riders
+  size_text.value = size; // size = Ride Length
+  crust_width.value = crust; // crust = Distance from Start
+  dollar_text.value = dollars; // dollars - How many Riders
   resizePizza();
 }
 
 // Update the current slider value (each time you drag the slider handle)
 size_text.oninput = function() {
   if (size_text.value >=4 && size_text.value<=25) {
-    pizza_size = size_text.value;
+    pizza_size = size_text.value; // pizza size = Ride Length
     size_slider.value = size_text.value;
     resizePizza();  
   }
@@ -299,7 +307,7 @@ size_text.oninput = function() {
 
 crust_width.oninput = function() {
   if (crust_width.value >=0 && crust_width.value<=2) {
-    pizza_crust = crust_width.value;
+    pizza_crust = crust_width.value; // pizza crust = Distance to Start
     crust_slider.value = crust_width.value*10;
     resizePizza();  
   }
@@ -307,25 +315,25 @@ crust_width.oninput = function() {
 
 dollar_text.oninput = function() {
   if (dollar_slider.value > 0) {
-    pizza_cost = dollar_text.value;
+    pizza_cost = dollar_text.value; // pizza cost = How many Riders
     dollar_slider.value = dollar_text.value;
     showStats();
   }
 }
 
 size_slider.oninput = function() {
-  pizza_size = this.value;
-  size_text.value = this.value;
+  pizza_size = this.value; // pizza size = Ride Length
+  size_text.value = this.value; // pizza size = Ride Length
   resizePizza();
 } 
 crust_slider.oninput = function() {
-  pizza_crust = this.value/10;
-  crust_width.value = this.value / 10;
+  pizza_crust = this.value/10; // pizza crust = Distance to Start || /10 is usse 
+  crust_width.value = this.value / 10; // crust = Distance to Start || /10 is issue 
   resizePizza();
 } 
 dollar_slider.oninput = function() {
-  pizza_cost = this.value;
-  dollar_text.value = this.value;
+  pizza_cost = this.value; // pizza cost = How many Riders
+  dollar_text.value = this.value; // dollar = How many Riders?
   showStats();
 } 
 
@@ -343,15 +351,15 @@ document.getElementById("save").onclick = function() {
   var c4 = document.createElement("div");
   var c5 = document.createElement("div");
 
-  var total_inches = document.getElementById("total_inches");
-  var square_inch_price = document.getElementById("square_inch_price");
-  var crustless_price = document.getElementById("crustless_price");
+  var total_inches = document.getElementById("total_inches"); // total inches = ???
+  var square_inch_price = document.getElementById("square_inch_price"); // square inch price = ???
+  var crustless_price = document.getElementById("crustless_price"); // crustless price = ???
 
-  c1.innerHTML = size_text.value+'"';
-  c2.innerHTML = crust_width.value+'"';
-  c3.innerHTML = total_inches.innerHTML+" in²";
-  c4.innerHTML = square_inch_price.innerHTML;
-  c5.innerHTML = crustless_price.innerHTML;
+  c1.innerHTML = size_text.value+'"'; // size = Ride Length
+  c2.innerHTML = crust_width.value+'"'; // crust = Distance to Start
+  c3.innerHTML = total_inches.innerHTML+" in²"; // total inches = ???
+  c4.innerHTML = square_inch_price.innerHTML; // square inches = ???
+  c5.innerHTML = crustless_price.innerHTML; // crustless price = ???
 
   new_row.appendChild(c1);
   new_row.appendChild(c2);
@@ -375,11 +383,11 @@ window.onresize = function(event) {
 function resizePizza() {
     const main_margin = 40;
     var tw = document.getElementById('pizza-container').offsetWidth;
-    var inches = pizza_size;
+    var inches = pizza_size; // pizza size = Ride Length
     var new_width = tw * inches / 14;
-    document.getElementById('crust').style.width = new_width+"px";
+    document.getElementById('crust').style.width = new_width+"px"; // crust = Distance to Start
 
-    var cheese_w  = new_width - (2*pizza_crust*tw/14);
+    var cheese_w  = new_width - (2*pizza_crust*tw/14); // crust = Distance to Start
     document.getElementById('cheese').style.width = cheese_w+"px";
     var margin = (pizza_crust*tw/14); //add thirty because that's the standard margin.
     document.getElementById('cheese').style.top = margin + main_margin+"px";
@@ -430,9 +438,9 @@ function showStats(){
   var crust_ratio = document.getElementById("crust_ratio");
   var crustless_total = document.getElementById("crustless_total");
   var crustless_price = document.getElementById("crustless_price");
-  var d = pizza_size;
-  var crust = pizza_crust;
-  const pi = 3.14159;
+  var d = pizza_size; // pizza size = Ride Length
+  var crust = pizza_crust; // pizza crust = Distance to Start
+  const pi = 3.14159; // useful for geolocation: 'derezzing' home and Ride Search?
   var tsi = (pi * (d/2) * (d/2));
   var clt = (pi * ((d-crust)/2) * ((d-crust)/2));
 
@@ -446,3 +454,7 @@ function showStats(){
 resizePizza();
 </script>
 
+<!-- Replace Pizza with Ride? -->
+<!-- Replace Size with Length(of Ride)? -->
+<!-- Replace Crust with Start(Distance from)? -->
+<!-- Replace Dollars with Riders? -->
